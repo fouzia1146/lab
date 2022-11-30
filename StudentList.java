@@ -4,11 +4,10 @@ import java.util.*;
 public class StudentList {
 	public static void main(String[] args) 
 	{
-//		Check arguments
-		char chacheck = args[0].substring(0).charAt(0);
-		if((chacheck=='a') || (chacheck=='r')||(chacheck=='c') && args[0].substring(1).length() > 1)
+		char chacheck=args[0].substring(1).charAt(0);
+		if(chacheck=='a' || chacheck=='r' || chacheck=='c' && args[0].substring(1).length()>1)
 			return;
-		else if((chacheck=='a')&&(chacheck=='r')&&(chacheck=='c')&&(chacheck!='?')&&(chacheck!='+'))
+		else if(chacheck!='a' && chacheck!='r' && chacheck!='c' && chacheck!='+' && chacheck!='?')
 			return;
 		if(args[0].equals("a"))
 		 {
